@@ -5,154 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vértice Apartaestudios</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
-
-    <!-- Encabezado y menú de navegación -->
     <header>
-        <div class="logo">
-            <img src="" alt="Vértice Apartaestudios">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#apartaestudios">Apartaestudios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <button class="menu-btn" onclick="toggleMenu()">☰</button>
-        </nav>
+        <img src="IMG_0334.jpg" alt="Logo Vértice Apartaestudios">
+        <h1>Tu espacio ideal, con todo incluido y sin complicaciones.</h1>
     </header>
 
-    <!-- Sección Nosotros -->
-    <section id="nosotros">
-        <h1>Bienvenido a Vértice Apartaestudios</h1>
-        <p>Somos un espacio moderno y cómodo, diseñado para ofrecerte la mejor experiencia de vivienda.</p>
+    <nav>
+        <ul>
+            <li><a href="#descripcion">¿Qué nos hace únicos?</a></li>
+            <li><a href="#espacios">Nuestros Espacios</a></li>
+            <li><a href="#faq">Preguntas Frecuentes</a></li>
+            <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+    </nav>
+
+    <section id="descripcion" class="descripcion">
+        <h2>¿Qué nos hace únicos?</h2>
+        <p>Somos la mejor opción de flatshare con todo incluido, ubicado en Galerías, Bogotá. Ofrecemos contratos flexibles desde 3 meses.</p>
     </section>
 
-    <!-- Sección Apartaestudios -->
-    <section id="apartaestudios">
-        <h2>Apartaestudios</h2>
-        <p>Diseñados con acabados de alta calidad y pensados para tu comodidad.</p>
-    </section>
-
-    <!-- Sección Galería -->
-    <section id="galeria">
-        <h2>Galería</h2>
-        <div class="media-container">
-            <div class="videos">
-                <video controls>
-                    <source src="https://www.youtube.com/watch?v=TCS3v3-Ksh0" type="video/mp4">
-                    Tu navegador no soporta videos.
-                </video>
-                <video controls>
-                    <source src="https://youtube.com/shorts/6RkkBlhIO8w?si=KWecGuvth96NXFsQ" type="video/mp4">
-                    Tu navegador no soporta videos.
-                </video>
-            </div>
-            <div class="imagenes">
-                <img src="" alt="Imagen del apartaestudio">
-                <img src="imagen3.jpg" alt="Imagen del apartaestudio">
-                <img src="imagen3.jpg" alt="Imagen del apartaestudio">
-                <img src="imagen3.jpg" alt="Imagen del apartaestudio">
-                <img src="imagen3.jpg" alt="Imagen del apartaestudio">
-            </div>
+    <section id="espacios" class="imagenes">
+        <h2>Explora nuestros espacios</h2>
+        <div class="galeria">
+            <img src="CCC35483-0580-4210-9CF0-2084F25FC480.jpeg" alt="Espacio 1">
+            <img src="41F5CF8A-BC25-4A5D-A5F7-5CCCBC15ABDC.jpeg" alt="Espacio 2">
+            <img src="A9EAA602-AFDD-4536-92E0-ACF06C319416.jpeg" alt="Espacio 3">
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Teléfono: <a href="tel:3214828400">321 482 8400</a></p>
-        <p>Teléfono: <a href="tel:302337127">302 337 1277</a></p>
-        <p>Ubicación: <a href="https://g.co/kgs/zKWmH4a" target="_blank">Ver en Google Maps</a></p>
+    <section id="faq" class="faq">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="pregunta">
+            <h3>¿Cuál es el tiempo mínimo de contrato?</h3>
+            <p>El contrato mínimo es de 3 meses.</p>
+        </div>
+        <div class="pregunta">
+            <h3>¿El precio incluye servicios?</h3>
+            <p>Sí, el precio incluye todos los servicios básicos.</p>
+        </div>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Vértice Apartaestudios. Todos los derechos reservados.</p>
-    </footer>
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <p>Teléfono: 3214828400 / 302337127</p>
+        <p>Dirección: Carrera 23 #53D-24, Galerías, Bogotá</p>
+    </section>
 
+    <footer>
+        <p>Vértice Apartaestudios - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Estilos del encabezado y navegación */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: black;
+    color: white;
+    text-align: center;
     padding: 20px;
-    background: #1a1a1a;
 }
 
-.logo img {
-    width: 150px;
+header img {
+    max-width: 150px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
 }
 
-.nav-links {
+nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;
+    padding: 0;
 }
 
-.nav-links li {
+nav ul li {
     display: inline;
+    margin: 0 15px;
 }
 
-.nav-links a {
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
 }
 
-.menu-btn {
-    display: none;
-}
-
-/* Estilos de las secciones */
 section {
-    padding: 50px 20px;
-}
-
-#nosotros, #apartaestudios, #galeria, #contacto {
-    background: #222;
-    margin: 20px 0;
-}
-
-/* Estilos de la galería */
-.media-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.videos video, .imagenes img {
-    width: 300px;
-    border-radius: 10px;
-}
-
-/* Estilos del pie de página */
-footer {
-    background: #1a1a1a;
     padding: 20px;
+    margin: 20px;
+    background: white;
+    border-radius: 5px;
 }
-// Función para el menú en móviles
-function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+.galeria img {
+    width: 30%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contacto {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Bienvenido a Vértice Apartaestudios");
+
+    let preguntas = document.querySelectorAll(".pregunta h3");
+    preguntas.forEach(pregunta => {
+        pregunta.addEventListener("click", function () {
+            let respuesta = this.nextElementSibling;
+            if (respuesta.style.display === "block") {
+                respuesta.style.display = "none";
+            } else {
+                respuesta.style.display = "block";
+            }
+        });
+    });
+});
